@@ -1,0 +1,59 @@
+Metadata-Version: 2.4
+Name: monitorcontrol
+Version: 4.1.1
+Summary: Monitor controls using MCCS over DDC-CI.
+Author-email: Alex Martens <alex+monitorcontrol@thinglab.org>
+License-Expression: MIT
+Project-URL: Repository, https://github.com/newAM/monitorcontrol
+Project-URL: Documentation, https://newam.github.io/monitorcontrol
+Project-URL: Changelog, https://github.com/newAM/monitorcontrol/blob/main/CHANGELOG.md
+Project-URL: Issues, https://github.com/newAM/monitorcontrol/issues
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: pyudev>=0.23.3; sys_platform != "win32"
+Dynamic: license-file
+
+monitorcontrol
+##############
+
+|PyPi Version| |Build Status| |Documentation Status| |Coverage Status| |Ruff|
+
+Python monitor control using the VESA Monitor Control Command Set (MCCS)
+over the Display Data Channel Command Interface Standard (DDC-CI).
+
+Supported Platforms
+*******************
+-  Linux (tested with NixOS)
+-  Windows (tested with Windows 10)
+
+Windows Install
+***************
+
+.. code-block:: bash
+
+   py -3 -m pip install monitorcontrol
+
+Linux Install
+*************
+
+.. code-block:: bash
+
+   python3 -m pip install monitorcontrol
+
+Documentation
+*************
+
+Full documentation including examples are avaliable in the `docs <https://newam.github.io/monitorcontrol>`__.
+
+.. |PyPi Version| image:: https://badge.fury.io/py/monitorcontrol.svg
+   :target: https://badge.fury.io/py/monitorcontrol
+.. |Build Status| image:: https://github.com/newAM/monitorcontrol/actions/workflows/ci.yml/badge.svg
+   :target: https://github.com/newAM/monitorcontrol/actions/workflows/ci.yml
+.. |Coverage Status| image:: https://coveralls.io/repos/github/newAM/monitorcontrol/badge.svg?branch=main
+   :target: https://coveralls.io/github/newAM/monitorcontrol?branch=main
+.. |Documentation Status| image:: https://img.shields.io/badge/docs-latest-blue
+   :target: https://newam.github.io/monitorcontrol
+.. |Ruff| image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
+    :target: https://github.com/astral-sh/ruff
+    :alt: Ruff

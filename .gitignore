@@ -1,0 +1,10 @@
+# Python Specific
+__pycache__/
+
+# Visual Studio user-specific
+windows_forms/bin/
+windows_forms/.vs/
+windows_forms/obj/
+
+builds/
+config.json

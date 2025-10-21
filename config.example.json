@@ -1,0 +1,21 @@
+{
+    "profile_1": {
+        "name": "Will be shown in the GUI application",
+        "monitors": {
+            "WINDOWS_MONITOR_ID": {
+                "brightness": "0",
+                "contrast": "50"
+            }
+        }
+    },
+
+    "profile_2": {
+        "name": "Will be shown in the GUI application",
+        "monitors": {
+            "WINDOWS_MONITOR_ID": {
+                "brightness": "100",
+                "contrast": "20"
+            }
+        }
+    }
+}

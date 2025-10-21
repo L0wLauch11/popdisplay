@@ -1,0 +1,2 @@
+[console_scripts]
+monitorcontrol = monitorcontrol.__main__:main
