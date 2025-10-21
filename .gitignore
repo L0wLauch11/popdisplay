@@ -1,5 +1,6 @@
 # Python Specific
 __pycache__/
+venv/
 
 # Visual Studio user-specific
 windows_forms/bin/
