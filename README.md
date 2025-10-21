@@ -1,5 +1,12 @@
 # PopDisplay - Manage your displays Brightness and Contrast on Windows using the keyboard!
 
+<p align="center">
+<img width="680" height="450" alt="demo" src="https://github.com/user-attachments/assets/3f6473d7-b197-4883-bb5d-217b4b08c0bd" />
+</p>
+
+https://github.com/user-attachments/assets/f0fefcbe-fd6a-4599-8bfc-49c6daadc753
+
+
 ## Why?
 I wanted a less bloated, keyboard oriented alternative to Twinkle Tray.
 
