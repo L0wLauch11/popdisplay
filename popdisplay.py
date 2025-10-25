@@ -11,33 +11,27 @@ if __name__ != '__main__':
 monitors = get_monitors()
 config_file_path = 'config.json'
 
-def monitor_force_contrast(monitor_id: int, contrast: int):
+def __monitor_force(name: str, func_set, func_get, monitor_id: int, value: int):
     monitor = monitors[monitor_id]
     with monitor:
         while True:
             try:
-                monitor.set_contrast(contrast)
-                if monitor.get_contrast() == contrast:
-                    print(f'Contrast set to {contrast} successfully!')
+                func_set(value)
+                if func_get() == value:
+                    print(f'{name} set to {value} successfully!')
                     return
             except:
                 pass
 
             time.sleep(0.1)
+
+def monitor_force_contrast(monitor_id: int, contrast: int):
+    monitor = monitors[monitor_id]
+    __monitor_force('Contrast', monitor.set_contrast, monitor.get_contrast, monitor_id, contrast)
 
 def monitor_force_brightness(monitor_id: int, brightness: int):
     monitor = monitors[monitor_id]
-    with monitor:
-        while True:
-            try:
-                monitor.set_luminance(brightness)
-                if monitor.get_luminance() == brightness:
-                    print(f'Brightness set to {brightness} successfully!')
-                    return
-            except:
-                pass
-
-            time.sleep(0.1)
+    __monitor_force('Brightness', monitor.set_luminance, monitor.get_luminance, monitor_id, brightness)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-j', '--json')
